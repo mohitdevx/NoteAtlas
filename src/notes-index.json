@@ -12,6 +12,11 @@
         "name": "permissions_management",
         "type": "file",
         "path": "/notes/linux/permissions_management.md"
+      },
+      {
+        "name": "practice_labs",
+        "type": "file",
+        "path": "/notes/linux/practice_labs.md"
       }
     ]
   }
