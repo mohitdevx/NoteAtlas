@@ -1,0 +1,6 @@
+node_modules
+dist
+coverage
+.netlify
+pnpm-lock.yaml
+src/notes-index.json

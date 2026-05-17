@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-canvas: var(--ui-canvas);
+  --color-surface: var(--ui-surface);
+  --color-surface-muted: var(--ui-surface-muted);
+  --color-brand-muted: var(--ui-brand-muted);
+
+  --color-txt-main: var(--ui-txt-main);
+  --color-txt-muted: var(--ui-txt-muted);
+  --color-brand: var(--ui-brand);
+
+  --color-line: var(--ui-line);
+
+  /* Multi-layered, soft ambient luxury shadow */
+  --shadow-classy:
+    0 4px 6px -1px rgba(var(--shadow-rgb), 0.03), 
+    0 12px 24px -4px rgba(var(--shadow-rgb), 0.06),
+    0 24px 48px -12px rgba(var(--shadow-rgb), 0.06);
+}
+
+@layer base {
+  :root {
+    --ui-canvas: #f9fafb;       /* Soft alabaster white */
+    --ui-surface: #ffffff;
+    --ui-surface-muted: #f1f5f9;
+    --ui-brand-muted: #e2e8f0;
+
+    --ui-txt-main: #0f172a;     /* Deep slate/black */
+    --ui-txt-muted: #475569;
+    --ui-brand: #1e293b;         /* Sophisticated deep ink */
+
+    --ui-line: #e2e8f0;
+    --shadow-rgb: 15, 23, 42;
+  }
+
+  .dark {
+    --ui-canvas: #030712;       /* Deep obsidian black */
+    --ui-surface: #0b0f19;      /* Sleek dark navy/gray */
+    --ui-surface-muted: #161e2e;
+    --ui-brand-muted: #1e293b;
+
+    --ui-txt-main: #f8fafc;
+    --ui-txt-muted: #94a3b8;
+    --ui-brand: #cbd5e1;         /* Muted premium platinum */
+
+    --ui-line: #1e293b;
+    --shadow-rgb: 0, 0, 0;
+  }
+
+  * {
+    border-color: var(--ui-line);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--ui-canvas);
+    color: var(--ui-txt-main);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}

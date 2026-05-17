@@ -1,0 +1,7 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Notes Atlas favicon">
+  <rect x="1" y="1" width="22" height="22" rx="6" fill="#1E293B" />
+  <path
+    fill="#F8FAFC"
+    d="M19 19H12V8C12 6.34315 13.3431 5 15 5H19C19.5523 5 20 5.44772 20 6V18C20 18.5523 19.5523 19 19 19ZM10 19H5C4.44772 19 4 18.5523 4 18V6C4 5.44772 4.44772 5 5 5H9C9.55228 5 10 5.44772 10 6V19Z"
+  />
+</svg>
