@@ -9,6 +9,11 @@
         "path": "/notes/linux/file_system1.md"
       },
       {
+        "name": "grep_docs",
+        "type": "file",
+        "path": "/notes/linux/grep_docs.md"
+      },
+      {
         "name": "permissions_management",
         "type": "file",
         "path": "/notes/linux/permissions_management.md"
