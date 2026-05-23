@@ -24,5 +24,33 @@
         "path": "/notes/linux/practice_labs.md"
       }
     ]
+  },
+  {
+    "name": "os",
+    "type": "folder",
+    "children": [
+      {
+        "name": "basic-introduction",
+        "type": "folder",
+        "children": [
+          {
+            "name": "introduction",
+            "type": "file",
+            "path": "/notes/os/basic-introduction/introduction.md"
+          }
+        ]
+      },
+      {
+        "name": "process",
+        "type": "folder",
+        "children": [
+          {
+            "name": "introduction",
+            "type": "file",
+            "path": "/notes/os/process/introduction.md"
+          }
+        ]
+      }
+    ]
   }
 ]
